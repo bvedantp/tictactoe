@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+header {
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+    padding: 9px;
+}
+
+.playerDisplay {
+    display: flex;
+    margin: auto;
+    gap: 6px;
+    padding: 5px;
+}
+
+.game-board {
+    border: 3px solid black;
+    display: flex;
+    flex-basis: 280px;
+    flex-direction: row;
+    align-self: center;
+}
+
+.cell {
+    background-color: aqua;
+    flex: 1 1 50px;
+    min-width: 30px;
+    flex-wrap: wrap;
+}
