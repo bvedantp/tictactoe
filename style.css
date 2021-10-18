@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    gap: 15px;
 }
 
 header {
@@ -21,21 +22,38 @@ header {
 .playerDisplay {
     display: flex;
     margin: auto;
+    align-items: center;
     gap: 6px;
     padding: 5px;
 }
 
-.game-board {
-    border: 3px solid black;
+.playerDisplay button {
+    padding: 3px;
+    font-size: 1em;
+}
+
+.outer-support {
     display: flex;
-    flex-basis: 280px;
-    flex-direction: row;
-    align-self: center;
+    justify-content: center;
+    flex: 1 1 15em;
+}
+
+.game-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 1 15em;
+    column-gap: 15px;
+    padding: 12px;
+    box-shadow: 1px 1px 25px 2px rgba(0, 0, 0, 0.281);
 }
 
 .cell {
     background-color: aqua;
-    flex: 1 1 50px;
-    min-width: 30px;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 4em;
+    flex: 1 1 4em;
 }
